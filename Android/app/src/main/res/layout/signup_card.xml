@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:visibility="visible"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_middle"
+        app:cardCornerRadius="6.0dip"
+        app:cardElevation="5.0dip">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_mlarge">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:layout_marginBottom="@dimen/spacing_xlarge"
+                    android:text="@string/sign_up_title"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorSecondaryDark"
+                    android:textStyle="bold" />
+
+                <androidx.core.widget.NestedScrollView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email_upper"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/gray" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailSignUp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4.0dip"
+                            android:layout_marginRight="-4.0dip"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username_upper"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/gray" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/usernameSignUp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4.0dip"
+                            android:layout_marginRight="-4.0dip"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password_upper"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/gray" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordSignUp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4.0dip"
+                            android:layout_marginRight="-4.0dip"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password_repeat_upper"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/gray" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordRepeatSignUp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4.0dip"
+                            android:layout_marginRight="-4.0dip"
+                            android:inputType="textPassword"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/blue"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/light_slate_gray"
+                        android:text="@string/already_account"
+                        android:paddingRight="5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:onClick="loginChange"
+                        android:text="@string/sign_in"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">WearIn</string>
+
+
+    <string name="email_upper">EMAIL</string>
+    <string name="password_upper">PASSWORD</string>
+    <string name="password_repeat_upper">REPEAT PASSWORD</string>
+    <string name="username_upper">USERNAME</string>
+    <string name="first_name_upper">FIRST NAME</string>
+    <string name="last_name_upper">LAST NAME</string>
+
+    <string name="sign_in_title">SIGN IN</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_in_forgot_password">Forgot Password ?</string>
+    <string name="sign_in_new_user">New User ?</string>
+
+    <string name="sign_up_title">SIGN UP</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="reset_password_title">RESET PASSWORD</string>
+    <string name="reset_password_accept_email">I accept sending me a password recovery email</string>
+    <string name="reset_password_button">RECOVER PASSWORD</string>
+    <string name="already_account">Already have an account? </string>
+
+
+    <string name="error_server_title">Error in petition</string>
+    <string name="error_server_info">There  has been an error during your petition. Try it again in a moment!</string>
+    <string name="error_no_internet_title">No Internet !</string>
+    <string name="error_no_internet_info">Reconnect to Internet and try it again.</string>
+    <string name="error_incorrect_credentials_title">Incorrect credentials!</string>
+    <string name="error_incorrect_credentials_info">You have introduced an incorrect username or password.</string>
+    <string name="error_username_exists_title">Username Exists !</string>
+    <string name="error_username_exists_info">The username already exists.</string>
+    <string name="error_account_exists_title">Email Exists !</string>
+    <string name="error_account_exists_info">There already exists an account with introduced email. Try Signing In!</string>
+    <string name="error_privacy_declined_title">Privacy Policy must be accepted!</string>
+    <string name="error_privacy_declined_info">You must accept the Privacy Policy to continue using the application. Click again in "Decline" button if you are not conform with it!</string>
+</resources>

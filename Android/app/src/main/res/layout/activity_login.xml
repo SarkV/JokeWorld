@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:background="@color/light_grey"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.avtdev.jokeworld.activities.LoginActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="fill_parent"
+        android:layout_height="220.0dip" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_mlarge"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_mlarge"
+            android:src="@mipmap/ic_launcher"/>
+        <ViewFlipper
+            android:id="@+id/card_front"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <include layout="@layout/login_card" />
+            <include layout="@layout/signup_card" />
+            <include layout="@layout/password_reset_card" />
+        </ViewFlipper >
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/signupButton"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_large"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/colorPrimary"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        android:scaleType="center"
+        app:srcCompat="@drawable/ic_done"
+        android:onClick="signUp"
+        android:visibility="gone"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
